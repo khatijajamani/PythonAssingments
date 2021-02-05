@@ -1,0 +1,172 @@
+
+---------------Taskone----------
+"q1"
+'''x = ['1', 'string', '2+2j', '3.0']
+print(x)'''
+
+#------------------
+"q2"
+''' my_list = [2, 22, 222, 2222, 22222]
+print("The length of list is", len(my_list,), "and the sliced values are", my_list[1:3])'''
+#--------------------------
+"q3"
+'''from math import prod
+list = [1,4,6,8,11]
+print(sum(list))
+print(prod(list))'''
+#--------------------------
+"q4'
+''' x =['1', '2', '3', '5']
+print("The largest number of the list is: ", max(x))
+print("The smallest number of the list is: ", min(x))''
+#--------------
+"q5"
+'''lst1 = []
+for i in list(range(50, 100)):
+    if i % 2 != 0:
+        lst1.append(i)
+        True
+print(lst1)'''
+
+#-------------------------
+"q6" 
+'''list1 = []
+for x in list(range(50, 100)):
+    if x % 2 != 0:
+        list1.append(x)
+        True
+print(list1)'''
+#--------------------------------
+"q7"
+'''list1 = [1,3,5,7,9,10]
+list2=[2,4,6,8]
+list1.pop()
+list1.extend(list2)
+print(list1)'''
+#-----------------------------------
+"q8"
+'''dict1={1:10,2:20}
+dict2={3:30,4:40}
+contdict={}
+for i in (dict1,dict2):
+    contdict.update(i)
+print(contdict)'''
+#----------------------------------
+"q9"
+val = int(input("Enter a value: "))
+sqrdict= {}
+for i in range(1, val+1):
+    sqrdict[i]=i*i
+print(sqrdict)'''
+#-------------------------------------------------
+"q10"
+''' val = int(input("Enter a value: "))
+sqrdict= {}
+for i in range(1, val+1):
+    sqrdict[i]=i*i
+print(sqrdict)'''
+
+#--------------------------------TASK TWO--------------------------
+"Q1"
+'''txt = "1234abcd"[::-1]
+print(txt)'''
+#---------------------
+"q2"
+'''def str_test(sentence):
+    str_dict = {"UpperCase": 0, "LowerCase": 0}
+    for i in sentence:
+        if i.isupper():
+            str_dict["UpperCase"] += 1
+        elif i.islower():
+            str_dict["LowerCase"] += 1
+        else:
+            pass
+    print("Sentence is: ", sentence)
+    print("No. of Uppercase characters", str_dict["UpperCase"])
+    print("No. of Lowercase characters", str_dict["LowerCase"])
+
+
+str_test("abcSdefPghijQkL")'''
+#---------------------------------
+"q3"
+''' def unique_list(l):
+  num = []
+  for a in l:
+    if a not in num:
+      num.append(a)
+  return num
+print('unique elements are')
+print(unique_list([1,2,4,5,4,5,6,9,10])) '''
+#-----------------------------------
+"q4"
+''' print("Enter a hyphen separated sequence of words:")
+lst=[n for n in raw_input().split('-')]  
+lst.sort()
+print("Sorted:")
+print('-'.join(lst))'''
+#---------------------------------
+"q5"
+''' userinput = input ("Insert a string input: ")
+string = "this should be uppercase!"
+print(userinput.upper())''
+
+#----------------------------
+"q6"
+''' def printValue(s1,s2):
+ print int(s1)+int(s2)
+
+printValue("3","4") #7'''
+
+#--------------------------------
+"q7"
+'''def printValue(s1,s2):
+    len1 = len('s1')
+    len2 = len('s2')
+    if len1>len2:
+        print('s1')
+    elif len2>len1:
+        print('s2')
+    else:
+        print('s1')
+        print('s2')
+    printValue("one", "three")'''
+#---------------------------------------
+"q8"
+'''def printTuple():
+    li = list()
+    for i in range(1, 21):
+        li.append(i ** 2)
+    print
+    tuple(li)
+printTuple()'''
+
+#------------------------
+"q9"
+def shownumber(limit):
+
+for i in range(0, limit):
+if i==0:
+print(i,end=" ")
+print("EVEN")
+
+elif i%2==0:
+print(i,end=" ")
+print("EVEN")
+
+else:
+print(i,end=" ")
+
+print("ODD")
+
+print(shownumber(4))
+
+#-----------------------------------
+"q10"
+evenNumbers = filter(lambda x: x%2==0, range(1,21))
+print evenNumbers
+
+#-------------------------------
+"q11"
+li = [1,2,3,4,5,6,7,8,9,10]
+evenNumbers = map(lambda x: x**2, filter(lambda x: x%2==0, li))
+print evenNumbers
